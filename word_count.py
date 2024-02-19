@@ -36,7 +36,7 @@ def count_words(dataframe):
 
 def save_output(dataframe, output_filename):
     """Save output to a file."""
-    dataframe.to_csv(output_filename, sep='\t', index=False)
+    dataframe.to_csv(output_filename, sep='\t', index=False, header=False)
 
 def run(input_directory, output_filename):
     """Call all functions."""
